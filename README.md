@@ -7,21 +7,14 @@ __Topic Classification__ 을 다음과 같은 다양한 방법론으로 해결�
 3. Matching
 4. Seq2Seq
 
-```
-■ 프로젝트 요약
- 
-- 목표: Sequence Classification 을 해결할 수 있는 다양한 방법론 탐색 및 구현
-- 팀원: 개인 프로젝트
-- 언어: Python3
-- 기술 스택: Pytorch, HuggingFace
-```
-
-
 ## 1. Classification
 
 - Classifier를 이용해 사전학습모델(PLM)을 Fine-tuning 하는 방법입니다.
 - 일반적으로 Classification 테스크에서 사용되는 방법입니다. 
 
+<img src="images/classification_2.PNG" alt="example image" width="400" height="200"/>
+
+&nbsp;&nbsp;&nbsp;&nbsp; (블로그: https://snumin44.tistory.com/13)
 
 ## 2. Masked Language Modeling (MLM)
 
