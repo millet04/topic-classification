@@ -37,7 +37,12 @@
 ## Implementation
 - 다음과 같이 직접 모델을 학습하고 평가할 수 있습니다. (bin 파일만 저장됩니다.)
 ```
+git clone https://github.com/snumin44/topic-classification.git
+cd Classification/train
+sh run_train.sh
 ```
 - 다음과 같이 커스텀 데이터 셋(소규모 데이터 셋)을 평가할 수 있습니다.
 ```
+cd Classification/evaluation
+sh run_evaluate.sh
 ``` 
