@@ -2,7 +2,7 @@
 
 __Topic Classification__ 을 다음과 같은 다양한 방법론으로 해결합니다.
 
-1. Classification
+1. [Classification](https://github.com/snumin44/topic-classification/tree/main/Classification) 
 2. Masked Language Modeling (MLM)
 3. Matching
 4. Seq2Seq
