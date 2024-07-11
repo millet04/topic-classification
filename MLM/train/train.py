@@ -240,20 +240,21 @@ def main(args):
     seed_everything(args)
     
     LOGGER.info('*** KLUE Topic Classification ***')    
-    
-    dataset = TopicClassificationDataset.load_data(test_size=args.test_size,seed=args.random_seed)
 
     pvp = KluePVP(args)
     collator = DataCollator(pvp, args)
-    
+
+    dataset = TopicClassificationDataset.load_data(test_size=args.test_size,seed=args.random_seed)
     dataset.set_split('train')
     train_dataloader = DataLoader(dataset, batch_size=args.batch_size,
                                   shuffle=args.shuffle, collate_fn=collator)
     
+    dataset = TopicClassificationDataset.load_data(test_size=args.test_size,seed=args.random_seed)
     dataset.set_split('valid')
     valid_dataloader = DataLoader(dataset, batch_size=args.batch_size,
                                   shuffle=args.shuffle, collate_fn=collator)
     
+    dataset = TopicClassificationDataset.load_data(test_size=args.test_size,seed=args.random_seed)
     dataset.set_split('test')
     test_dataloader = DataLoader(dataset, batch_size=args.batch_size,
                                  shuffle=args.shuffle, collate_fn=collator)
