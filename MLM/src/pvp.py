@@ -1,3 +1,6 @@
+############################################################################################
+# Referred to the following code: https://github.com/timoschick/pet/blob/master/pet/pvp.py #
+############################################################################################
 import torch
 from transformers import AutoTokenizer
 
