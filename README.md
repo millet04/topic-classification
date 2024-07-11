@@ -19,7 +19,8 @@ __Topic Classification__ 을 다음과 같은 다양한 방법론으로 해결�
 ## 2. Masked Language Modeling (MLM)
 
 - MLM Head를 이용해 프롬프트의 [MASK] 토큰을 예측하는 방법입니다.
-- Verbalizer로 예측한 토큰과 레이블을 연결해 MLM 테스크를 분류 테스크로 전환합니다.    
+- Verbalizer로 예측한 토큰과 레이블을 연결해 MLM 테스크를 분류 테스크로 전환합니다.
+- "[Exploiting Cloze Questions for Few Shot Text Classification and Natural Language Inference](https://github.com/timoschick/pet)"의 방법론을 참고했습니다.    
 
 <img src="images/petmlm2.PNG" alt="example image" width="420" height="220"/>
 
@@ -33,5 +34,28 @@ __Topic Classification__ 을 다음과 같은 다양한 방법론으로 해결�
 ## 4. Seq2Seq
 
 - 인코더 모델이 아닌 Seq2Seq 모델을 이용해 분류 테스크를 해결합니다. 
-- 분류 테스크를 생성 테스크로 전환해 해결합니다. 
+- 분류 테스크를 생성 테스크로 전환해 해결합니다.
+
+## 5. Citing
+
+```
+@article{schick2020exploiting,
+  title={Exploiting Cloze Questions for Few-Shot Text Classification and Natural Language Inference},
+  author={Timo Schick and Hinrich Schütze},
+  journal={Computing Research Repository},
+  volume={arXiv:2001.07676},
+  url={http://arxiv.org/abs/2001.07676},
+  year={2020}
+}
+
+@article{schick2020small,
+  title={It's Not Just Size That Matters: Small Language Models Are Also Few-Shot Learners},
+  author={Timo Schick and Hinrich Schütze},
+  journal={Computing Research Repository},
+  volume={arXiv:2009.07118},
+  url={http://arxiv.org/abs/2009.07118},
+  year={2020}
+}
+```
+
 
