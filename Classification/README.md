@@ -13,8 +13,8 @@
 
 - 모델, 데이터셋 등 구체적인 실험 정보는 다음과 같습니다.
   
-  - PLM: klue/bert-base (한국어 BERT)
-  - Dataset: KLUE 'ynat' (7 classes : IT/과학, 경제, 사회, 생활문화, 세계, 스포츠, 정치 )
+  - PLM: __klue/bert-base__ (한국어 BERT)
+  - Dataset: __KLUE 'ynat'__ (7 classes : IT/과학, 경제, 사회, 생활문화, 세계, 스포츠, 정치 )
   - Epochs: 10
   - Early Stop: 5
   - Batch Size: 128
@@ -32,7 +32,7 @@
 
 ||pooler_output|cls|mean|max|
 |:---:|:---:|:---:|:---:|:---:|
-|ynat (valid set)|78.29 (%)|80.55 (%)|78.86 (%)|78.29 (%)|
+|커스텀 데이터 셋|78.29 (%)|80.55 (%)|78.86 (%)|78.29 (%)|
 
 ## Implementation
 - 다음과 같이 직접 모델을 학습하고 평가할 수 있습니다. (bin 파일만 저장됩니다.)
