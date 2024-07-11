@@ -20,7 +20,7 @@ __Topic Classification__ 을 다음과 같은 다양한 방법론으로 해결�
 
 - MLM Head를 이용해 프롬프트의 [MASK] 토큰을 예측하는 방법입니다.
 - Verbalizer로 예측한 토큰과 레이블을 연결해 MLM 테스크를 분류 테스크로 전환합니다.
-- "[Exploiting Cloze Questions for Few Shot Text Classification and Natural Language Inference](https://github.com/timoschick/pet)"의 방법론을 참고했습니다.    
+- 참고: [Exploiting Cloze Questions for Few Shot Text Classification and Natural Language Inference](https://github.com/timoschick/pet) 
 
 <img src="images/petmlm2.PNG" alt="example image" width="420" height="220"/>
 
