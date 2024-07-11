@@ -10,9 +10,7 @@ class MLMHead(nn.Module):
         self.gelu = nn.GELU()
         self.layer_norm = nn.LayerNorm(config.hidden_size, eps=config.layer_norm_eps)
         self.decoder = nn.Linear(config.hidden_size, config.vocab_size)
-        self.bias = nn.Parameter(torch.zeros(config.vocab_size))
-        self.decoder.bias = self.bias
-
+	    
     def forward(self, x):
         x = self.linear(x)
         x = self.gelu(x)
@@ -29,22 +27,6 @@ class MaskedLanguageModel(nn.Module):
         self.tokenizer = AutoTokenizer.from_pretrained(args.model)
         self.mlm_head = MLMHead(self.config)
         self.pvp = pvp
-
-        self.apply(self._init_weights)
-        
-    # https://github.com/huggingface/transformers/blob/main/src/transformers/models/bert/modeling_bert.py#L748 
-    def _init_weights(self, module):
-        if isinstance(module, nn.Linear):
-            module.weight.data.normal_(mean=0.0, std=self.config.initializer_range)
-            if module.bias is not None:
-                module.bias.data.zero_()
-        elif isinstance(module, nn.Embedding):
-            module.weight.data.normal_(mean=0.0, std=self.config.initializer_range)
-            if module.padding_idx is not None:
-                module.weight.data[module.padding_idx].zero_()
-        elif isinstance(module, nn.LayerNorm):
-            module.bias.data.zero_()
-            module.weight.data.fill_(1.0)
             
     def forward(self, input_ids, attention_mask, token_type_ids, label=None):
         outputs = self.encoder(input_ids, attention_mask, token_type_ids)
