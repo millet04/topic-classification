@@ -47,4 +47,23 @@ sh run_train.sh
 cd MLM/evaluation
 sh run_evaluate.sh
 ``` 
-## Citation
+## Citing
+'''
+@article{schick2020exploiting,
+  title={Exploiting Cloze Questions for Few-Shot Text Classification and Natural Language Inference},
+  author={Timo Schick and Hinrich Schütze},
+  journal={Computing Research Repository},
+  volume={arXiv:2001.07676},
+  url={http://arxiv.org/abs/2001.07676},
+  year={2020}
+}
+
+@article{schick2020small,
+  title={It's Not Just Size That Matters: Small Language Models Are Also Few-Shot Learners},
+  author={Timo Schick and Hinrich Schütze},
+  journal={Computing Research Repository},
+  volume={arXiv:2009.07118},
+  url={http://arxiv.org/abs/2009.07118},
+  year={2020}
+}
+'''
