@@ -48,7 +48,8 @@ cd MLM/evaluation
 sh run_evaluate.sh
 ``` 
 ## Citing
-'''
+
+```
 @article{schick2020exploiting,
   title={Exploiting Cloze Questions for Few-Shot Text Classification and Natural Language Inference},
   author={Timo Schick and Hinrich Schütze},
@@ -57,7 +58,6 @@ sh run_evaluate.sh
   url={http://arxiv.org/abs/2001.07676},
   year={2020}
 }
-
 @article{schick2020small,
   title={It's Not Just Size That Matters: Small Language Models Are Also Few-Shot Learners},
   author={Timo Schick and Hinrich Schütze},
@@ -66,4 +66,4 @@ sh run_evaluate.sh
   url={http://arxiv.org/abs/2009.07118},
   year={2020}
 }
-'''
+```
