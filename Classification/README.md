@@ -6,7 +6,7 @@
 
 <img src="../images/classification_2.PNG" alt="example image" width="400" height="200"/>
 
-&nbsp;&nbsp;&nbsp;&nbsp; (블로그: https://snumin44.tistory.com/13)
+&nbsp;&nbsp;&nbsp;&nbsp; (블로그: [https://snumin44.tistory.com/13](https://snumin44.tistory.com/13))
 
 
 ## Experiment
