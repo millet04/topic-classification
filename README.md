@@ -1,4 +1,4 @@
-# 📰 Topic Classification with Different Approaches
+# Topic Classification with Different Approaches
 
 __Topic Classification__ 을 다음과 같은 다양한 방법론으로 해결합니다.
 
