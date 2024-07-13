@@ -2,8 +2,9 @@
 
 ## Introduction
 
-- MLM Head를 이용해 프롬프트의 [MASK] 토큰을 예측하는 방법입니다.
-- Verbalizer로 예측한 토큰과 레이블을 연결해 MLM 테스크를 분류 테스크로 전환합니다.    
+- 텍스트와 레이블 사이의 함의(Entaliment) 여부를 예측하는 방법입니다.
+- 다중 분류 테스크를 이진 분류 테스크로 전환해 해결합니다.
+- 참고: [Entailment as Few-Shot Learner](https://arxiv.org/abs/2104.14690)   
 
 <img src="../images/entailment3.PNG" alt="example image" width="400" height="200"/>
 
@@ -26,7 +27,7 @@
 
 ||{}|이 뉴스의 주제는 {}이다.|{}에 관한 기사이다.|이 기사는 {}에 관한 내용이다.|
 |:---:|:---:|:---:|:---:|:---:|
-|ynat (valid set)|86.91 (%)|87.03 (%)|86.62 (%))|86.18 (%)|
+|ynat (valid set)|86.91 (%)|87.03 (%)|86.62 (%)|86.18 (%)|
 
 - 직접 구축한 소규모 데이터 셋(175개 문장)으로 평가한 결과는 다음과 같습니다.
 
@@ -49,19 +50,11 @@ sh run_evaluate.sh
 ## Citing
 
 ```
-@article{schick2020exploiting,
-  title={Exploiting Cloze Questions for Few-Shot Text Classification and Natural Language Inference},
-  author={Timo Schick and Hinrich Schütze},
+@article{wang2020entailment,
+  title={Entailment and Few-Shot Learner},
+  author={Sinong Wang, Han Fang, Madian Khabsa, Hanzi Mao, Hao Ma},
   journal={Computing Research Repository},
-  volume={arXiv:2001.07676},
-  url={http://arxiv.org/abs/2001.07676},
-  year={2020}
-}
-@article{schick2020small,
-  title={It's Not Just Size That Matters: Small Language Models Are Also Few-Shot Learners},
-  author={Timo Schick and Hinrich Schütze},
-  journal={Computing Research Repository},
-  volume={arXiv:2009.07118},
+  volume={arXiv:2104.14690},
   url={http://arxiv.org/abs/2009.07118},
   year={2020}
 }
