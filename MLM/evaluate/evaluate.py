@@ -10,6 +10,7 @@ from transformers import AutoTokenizer
 sys.path.append("../") 
 from src.data_loader import (
         TopicClassificationDataset,
+        CustomDataset,
         DataCollator,
 )
 from src.pvp import KluePVP
@@ -68,8 +69,7 @@ def argument_parser():
 def main(args):
     seed_everything(args)
     
-    dataset = TopicClassificationDataset.load_data()
-    dataset.load_custom_testset(args.test_data)
+    dataset = CustomDataset.load_data(args.test_data)
     pvp = KluePVP(args)
     
     collator = DataCollator(pvp, args)
