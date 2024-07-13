@@ -3,7 +3,9 @@
 ## Introduction
 
 - MLM Head를 이용해 프롬프트의 [MASK] 토큰을 예측하는 방법입니다.
-- Verbalizer로 예측한 토큰과 레이블을 연결해 MLM 테스크를 분류 테스크로 전환합니다.    
+- Verbalizer로 예측한 토큰과 레이블을 연결해 MLM 테스크를 분류 테스크로 전환합니다.
+- 참고: [Exploiting Cloze Questions for Few Shot Text Classification and Natural Language Inference](https://github.com/timoschick/pet)
+- __License__ :This project is licensed under the Apache License, Version 2.0. See the LICENSE file for details.   
 
 <img src="../images/petmlm2.PNG" alt="example image" width="420" height="220"/>
 
