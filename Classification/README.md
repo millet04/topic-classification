@@ -2,11 +2,9 @@
 
 ## Introduction
 - Classifier를 이용해 사전학습모델(PLM)을 Fine-tuning 하는 방법입니다.
-- 일반적으로 Classification 테스크에서 사용되는 방법입니다. 
+- 일반적으로 Classification 테스크에서 사용되는 방법입니다. [BLOG](https://snumin44.tistory.com/13)
 
 <img src="../images/classification_2.PNG" alt="example image" width="400" height="200"/>
-
-&nbsp;&nbsp;&nbsp;&nbsp; (블로그: [https://snumin44.tistory.com/13](https://snumin44.tistory.com/13))
 
 
 ## Experiment
