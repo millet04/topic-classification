@@ -34,7 +34,7 @@ __Topic Classification__ 을 다음과 같은 다양한 방법론으로 해결�
 
 <img src="images/entailment3.PNG" alt="example image" width="410" height="210"/>
 
-&nbsp;&nbsp;&nbsp;&nbsp; (블로그: [https://snumin44.tistory.com/13](https://snumin44.tistory.com/16))
+&nbsp;&nbsp;&nbsp;&nbsp; (블로그: [https://snumin44.tistory.com/16](https://snumin44.tistory.com/16))
 
 ## 4. Seq2Seq
 
