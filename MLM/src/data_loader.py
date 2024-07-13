@@ -36,6 +36,26 @@ class TopicClassificationDataset(Dataset):
         return {'title':self.title[index],
                 'label':self.label[index]}
 
+class CustomDataset(Dataset):
+
+    def __init__(self, title, label):
+        self.title = title
+        self.label = label
+            
+    @classmethod
+    def load_data(cls, file_path):
+        data = pd.read_csv(file_path, delimiter='\t')
+        title = list(data['title'])
+        label = list(data['label'])
+        return cls(title, label)
+    
+    def __len__(self):
+        assert len(self.title) == len(self.label)
+        return len(self.title)
+            
+    def __getitem__(self, index):
+        return {'title':self.title[index],
+                'label':self.label[index]}
 
 class DataCollator(object):
 
