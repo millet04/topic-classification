@@ -3,12 +3,10 @@
 ## Introduction
 
 - 텍스트와 레이블 사이의 함의(Entaliment) 여부를 예측하는 방법입니다.
-- 다중 분류 테스크를 이진 분류 테스크로 전환해 해결합니다.
+- 다중 분류 테스크를 이진 분류 테스크로 전환해 해결합니다. [BLOG](https://snumin44.tistory.com/16)
 - 참고: [Entailment as Few-Shot Learner](https://arxiv.org/abs/2104.14690)   
 
 <img src="../images/entailment3.PNG" alt="example image" width="400" height="200"/>
-
-&nbsp;&nbsp;&nbsp;&nbsp; (블로그: [https://snumin44.tistory.com/16](https://snumin44.tistory.com/16)) 
       
 ## Experiment
 
