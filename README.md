@@ -41,7 +41,7 @@ __Topic Classification__ 을 다음과 같은 다양한 방법론으로 해결�
 - 인코더 모델이 아닌 Seq2Seq 모델을 이용해 분류 테스크를 해결합니다. 
 - 분류 테스크를 생성 테스크로 전환해 해결합니다.
 
-## 5. Citing
+## Citing
 
 ```
 @article{schick2020exploiting,
