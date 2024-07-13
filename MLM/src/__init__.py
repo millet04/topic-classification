@@ -1,5 +1,6 @@
 from .data_loader import (
         TopicClassificationDataset,
+        CustomDataset,
         DataCollator,
 )
                         
