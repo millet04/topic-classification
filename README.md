@@ -5,7 +5,7 @@ __Topic Classification__ 을 다음과 같은 다양한 방법론으로 해결�
 1. [Classification](https://github.com/snumin44/topic-classification/tree/main/Classification) 
 2. [Masked Language Modeling (MLM)](https://github.com/snumin44/topic-classification/tree/main/MLM)
 3. [Matching](https://github.com/snumin44/topic-classification/tree/main/Matching)
-4. [Seq2Seq]()
+4. [Seq2Seq](https://github.com/snumin44/topic-classification/tree/main/Seq2Seq)
 
 ## 1. Classification
 
@@ -38,6 +38,7 @@ __Topic Classification__ 을 다음과 같은 다양한 방법론으로 해결�
 - 인코더 모델이 아닌 Seq2Seq 모델을 이용해 분류 테스크를 해결합니다. 
 - 디코더로부터 출력된 마지막 토큰의 표현을 이용해 분류를 수행합니다. [BLOG](https://snumin44.tistory.com/17)
 
+<img src="images/seq2seq.PNG" alt="example image" width="400" height="200"/>
 
 ## Citing
 
