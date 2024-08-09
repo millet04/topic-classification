@@ -170,10 +170,6 @@ def train(model, train_dataloader, optimizer, scheduler, args, scaler):
             train_loss = model(input_ids, attention_mask, token_type_ids, label)
                 
         total_train_loss += train_loss.mean()
-
-        # Clip the norm of the gradients to 1.0.
-        # This is to help prevent the "exploding gradients" problem.
-        torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=5.0)   
                 
         if args.amp:
             scaler.scale(train_loss.mean()).backward()
