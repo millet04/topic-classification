@@ -72,7 +72,8 @@ def main(args):
     dataloader = DataLoader(dataset, batch_size=args.batch_size, collate_fn=collator)
 
     model = ClassificationModel(num_labels, args).to(args.device)
-    model.load_state_dict(torch.load(os.path.join(args.pretrained_path, "pytorch_model.bin")))
+    model.load_state_dict(torch.load(os.path.join(args.pretrained_path, "pytorch_model.bin"),
+                                    map_location=torch.device(args.device)))
 
     accuracy = test(model, dataloader, args.device)
     print(f'Topic Classification Accuracy: {round(accuracy,2)} (%)')
